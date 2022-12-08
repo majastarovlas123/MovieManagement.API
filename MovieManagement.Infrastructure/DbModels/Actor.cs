@@ -1,4 +1,4 @@
-﻿namespace MovieManagement.API.DbModels
+﻿namespace MovieManagement.Infrastructure.DbModels
 {
     public class Actor
     {

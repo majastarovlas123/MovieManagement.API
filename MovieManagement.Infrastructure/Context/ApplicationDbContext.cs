@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieManagement.API.DbModels;
+using MovieManagement.Infrastructure.DbModels;
 
-namespace MovieManagement.API.Context
+namespace MovieManagement.Infrastructure.Context
 {
     public class ApplicationDbContext : DbContext
     {
