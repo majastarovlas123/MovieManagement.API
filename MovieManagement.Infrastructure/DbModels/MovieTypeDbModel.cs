@@ -1,9 +1,8 @@
 ﻿namespace MovieManagement.Infrastructure.DbModels
 {
-    public class Movie : BaseEntity<Guid>
+    public class MovieTypeDbModel : BaseEntity<Guid>
     {
         public string Name { get; set; } = string.Empty;
-        public ICollection<Role> Roles { get; set; } = null!;
-
+        public ICollection<MovieDbModel> Movies { get; set; } = null!;
     }
 }

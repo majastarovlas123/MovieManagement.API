@@ -14,8 +14,8 @@ namespace MovieManagement.Infrastructure.Repositories
         where TEntity : BaseEntity<TKey>
         where TKey : unmanaged
     {
-        ApplicationDbContext _dbContext;
-        DbSet<TEntity> _dbSet;
+        private readonly ApplicationDbContext _dbContext;
+        private readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(ApplicationDbContext dbContext)
         {

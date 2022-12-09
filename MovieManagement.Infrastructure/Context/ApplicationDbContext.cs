@@ -9,9 +9,9 @@ namespace MovieManagement.Infrastructure.Context
         {
         }
 
-        public DbSet<Actor> Actors { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<Movie> Movies { get; set; }
-        public DbSet<MovieType> MovieTypes { get; set; }
+        public DbSet<ActorDbModel> Actors { get; set; }
+        public DbSet<RoleDbModel> Roles { get; set; }
+        public DbSet<MovieDbModel> Movies { get; set; }
+        public DbSet<MovieTypeDbModel> MovieTypes { get; set; }
     }
 }

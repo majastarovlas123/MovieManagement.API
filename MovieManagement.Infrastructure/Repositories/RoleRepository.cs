@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieManagement.Infrastructure.Repositories
 {
-    public class RoleRepository : GenericRepository<Role, Guid>, IRoleRepository
+    public class RoleRepository : GenericRepository<RoleDbModel, Guid>, IRoleRepository
     {
         public RoleRepository(ApplicationDbContext dbContext) : base(dbContext)
         {

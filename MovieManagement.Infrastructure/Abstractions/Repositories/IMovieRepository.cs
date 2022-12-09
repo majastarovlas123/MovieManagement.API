@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieManagement.Infrastructure.Abstractions.Repositories
 {
-    public interface IMovieRepository : IGenericRepository<Movie, Guid>
+    public interface IMovieRepository : IGenericRepository<MovieDbModel, Guid>
     {
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieManagement.Infrastructure.Repositories
 {
-    public class MovieRepository : GenericRepository<Movie, Guid>, IMovieRepository
+    public class MovieRepository : GenericRepository<MovieDbModel, Guid>, IMovieRepository
     {
         public MovieRepository(ApplicationDbContext dbContext) : base(dbContext)
         {

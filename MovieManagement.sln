@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.API", "MovieManagement.API\MovieManagement.API.csproj", "{6CE71575-1DE8-4280-9CCF-70660B9DBA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieManagement.API", "MovieManagement.API\MovieManagement.API.csproj", "{6CE71575-1DE8-4280-9CCF-70660B9DBA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.Infrastructure", "MovieManagement.Infrastructure\MovieManagement.Infrastructure.csproj", "{DD414546-44CF-484C-8A8E-6B43AA0F92D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieManagement.Infrastructure", "MovieManagement.Infrastructure\MovieManagement.Infrastructure.csproj", "{DD414546-44CF-484C-8A8E-6B43AA0F92D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.Domain", "MovieManagement.Domain\MovieManagement.Domain.csproj", "{14E9400A-C3D7-440D-B271-B250CF82B7EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD414546-44CF-484C-8A8E-6B43AA0F92D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD414546-44CF-484C-8A8E-6B43AA0F92D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD414546-44CF-484C-8A8E-6B43AA0F92D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E9400A-C3D7-440D-B271-B250CF82B7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E9400A-C3D7-440D-B271-B250CF82B7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E9400A-C3D7-440D-B271-B250CF82B7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E9400A-C3D7-440D-B271-B250CF82B7EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
