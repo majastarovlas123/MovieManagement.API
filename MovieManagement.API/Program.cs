@@ -1,9 +1,16 @@
 using Microsoft.EntityFrameworkCore;
-using MovieManagement.API.Context;
+using MovieManagement.Infrastructure.Abstractions.Repositories;
+using MovieManagement.Infrastructure.Context;
+using MovieManagement.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddTransient<IActorRepository, ActorRepository >();
+builder.Services.AddTransient<IMovieRepository, MovieRepository>();
+builder.Services.AddTransient<IMovieTypeRepository, MovieTypeRepository>();
+builder.Services.AddTransient<IRoleRepository, RoleRepository>();
+
 
 builder.Services.AddControllers();
 

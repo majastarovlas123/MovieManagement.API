@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieManagement.Infrastructure.Abstractions.Repositories
 {
-    public interface IRoleRepository : IGenericRepository<Role>
+    public interface IRoleRepository : IGenericRepository<Role, Guid>
     {
     }
 }
