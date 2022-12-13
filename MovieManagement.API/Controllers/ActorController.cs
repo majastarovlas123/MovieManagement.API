@@ -7,9 +7,7 @@ using MovieManagement.Infrastructure.Repositories;
 
 namespace MovieManagement.API.Controllers
 {
-    [ApiController]
-    [Route("/api/[controller]/[action]")]
-    public class ActorController : ControllerBase
+    public class ActorController : AppControllerBase
     {
         private readonly IActorRepository _actorRepository;
 

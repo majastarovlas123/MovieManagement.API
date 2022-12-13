@@ -9,5 +9,6 @@ namespace MovieManagement.Infrastructure.Abstractions.Repositories
 {
     public interface IRoleRepository : IGenericRepository<RoleDbModel, Guid>
     {
+        IQueryable<RoleDbModel> GetAllWithIncludes();
     }
 }

@@ -6,8 +6,7 @@ using MovieManagement.Infrastructure.DbModels;
 
 namespace MovieManagement.API.Controllers
 {
-    [ApiController]
-    public class MovieController : ControllerBase
+    public class MovieController : AppControllerBase
     {
         private readonly IMovieRepository _movieRepository;
 

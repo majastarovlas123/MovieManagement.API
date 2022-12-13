@@ -6,9 +6,7 @@ using MovieManagement.Infrastructure.DbModels;
 
 namespace MovieManagement.API.Controllers
 {
-    [ApiController]
-    [Route("/api/[controller]/[action]")]
-    public class MovieTypeController : ControllerBase
+    public class MovieTypeController : AppControllerBase
     {
         private readonly IMovieTypeRepository _movieTypeRepository;
 
@@ -18,10 +16,22 @@ namespace MovieManagement.API.Controllers
         }
 
         [HttpGet]
-        public async Task<List<MovieTypeDbModel>> GetAllMovieTypes()
+        public async Task<List<MovieType>> GetAllMovieTypes()
         {
-            var result = await _movieTypeRepository.GetAll().ToListAsync();
-            return result;
+            var movieTypeDbModels = await _movieTypeRepository.GetAll().ToListAsync();
+
+            var movieTypes = new List<MovieType>();
+
+            foreach (var movieTypeDbModel in movieTypeDbModels)
+            {
+                movieTypes.Add(new MovieType
+                {
+                    Id = movieTypeDbModel.Id,
+                    Name = movieTypeDbModel.Name
+                });
+            }
+
+            return movieTypes;
         }
 
         [HttpGet]

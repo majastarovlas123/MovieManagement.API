@@ -1,4 +1,5 @@
-﻿using MovieManagement.Infrastructure.Abstractions.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieManagement.Infrastructure.Abstractions.Repositories;
 using MovieManagement.Infrastructure.Context;
 using MovieManagement.Infrastructure.DbModels;
 using System;
@@ -13,6 +14,12 @@ namespace MovieManagement.Infrastructure.Repositories
     {
         public RoleRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
+        }
+
+        public IQueryable<RoleDbModel> GetAllWithIncludes()
+        {
+            var result = _dbSet.Include(x => x.Actor).Include(x => x.Movie);
+            return result;
         }
     }
 }

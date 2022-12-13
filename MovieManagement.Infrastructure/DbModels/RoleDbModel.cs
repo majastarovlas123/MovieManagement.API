@@ -4,7 +4,7 @@
     {
         public Guid ActorId { get; set; }
         public Guid MovieId { get; set; }
-        public ActorDbModel Actors { get; set; } = null!;
-        public MovieDbModel Movies { get; set; } = null!;
+        public ActorDbModel Actor { get; set; } = null!;
+        public MovieDbModel Movie { get; set; } = null!;
     }
 }
