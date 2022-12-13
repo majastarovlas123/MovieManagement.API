@@ -7,7 +7,6 @@ using MovieManagement.Infrastructure.DbModels;
 namespace MovieManagement.API.Controllers
 {
     [ApiController]
-    [Route("/api/[controller]/[action]")]
     public class MovieController : ControllerBase
     {
         private readonly IMovieRepository _movieRepository;
