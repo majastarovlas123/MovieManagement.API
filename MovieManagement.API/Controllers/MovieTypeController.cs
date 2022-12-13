@@ -50,5 +50,13 @@ namespace MovieManagement.API.Controllers
 
             return result;
         }
+
+        [HttpDelete]
+        public async Task<MovieTypeDbModel> DeleteMovieType(Guid id)
+        {
+            var result = await _movieTypeRepository.GetByIdAsync(id);
+            await _movieTypeRepository.DeleteAsync(id);
+            return result;
+        }
     }
 }
